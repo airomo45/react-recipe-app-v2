@@ -1,10 +1,12 @@
 {
-  "name": "react-recipe-app",
+  "name": "react-recipe-app-v2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://airomo45.github.io/react-recipe-app-v2",
   "dependencies": {
     "aws-appsync": "^1.0.20",
     "aws-appsync-react": "^1.0.11",
+    "gh-pages": "^1.1.0",
     "graphql-tag": "^2.9.2",
     "react": "^16.3.2",
     "react-apollo": "^2.1.4",
@@ -13,6 +15,8 @@
     "uuid": "^3.2.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
